@@ -66,7 +66,7 @@ function playToFive() {
     else if (getWinner(playerMove, computerMove) === 'computer') {
     computerWins = computerWins += 1;
     }
-    else if (getWinner(playerMove, coputerMove) === 'tie') {
+    else if (getWinner(playerMove, computerMove) === 'tie') {
     playerWins = playerWins + 0;
     computerWins = computerWins + 0;
     }
@@ -74,4 +74,4 @@ function playToFive() {
     console.log("The score is currently player" + playerWins + "to computer" + computerWins);
     return [playerWins, computerWins];
 }
-
+}
