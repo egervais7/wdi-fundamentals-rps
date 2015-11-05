@@ -72,7 +72,7 @@ function playToFive() {
     }
     console.log('Player chose' + ' ' + playerMove + ' ' + 'and Computer chose' + ' ' + computerMove);
     console.log('The score is currently player' + ' ' + playerWins + ' ' + 'to computer' + ' ' + computerWins);
-    return [playerWins, computerWins];
 }
+return [playerWins, computerWins];
 }
 playToFive();
