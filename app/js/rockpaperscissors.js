@@ -4,7 +4,7 @@
 'use strict';
 
 function getInput() {
-    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
+    console.log("Please choose either 'rock', 'paper', or 'scissors'.");
     return prompt();
 }
 function randomPlay() {
@@ -57,7 +57,7 @@ function playToFive() {
     console.log("Let's play Rock, Paper, Scissors");
     var playerWins = 0;
     var computerWins = 0;
-    while (playerWins < 5 && computerWins < 5) {
+    if (playerWins < 5 && computerWins < 5) {
     var playerMove = getPlayerMove();
     var computerMove = getComputerMove();
     if (getWinner(playerMove, computerMove) === 'player') {
@@ -70,8 +70,9 @@ function playToFive() {
     playerWins = playerWins + 0;
     computerWins = computerWins + 0;
     }
-    console.log("Player chose" + playerMove + "and Computer chose" + computerMove);
-    console.log("The score is currently player" + playerWins + "to computer" + computerWins);
+    console.log('Player chose' + ' ' + playerMove + ' ' + 'and Computer chose' + ' ' + computerMove);
+    console.log('The score is currently player' + ' ' + playerWins + ' ' + 'to computer' + ' ' + computerWins);
     return [playerWins, computerWins];
 }
 }
+playToFive();
